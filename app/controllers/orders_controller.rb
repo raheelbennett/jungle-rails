@@ -1,3 +1,5 @@
+# require_relative '../models/line_item'
+
 class OrdersController < ApplicationController
 
   def show
