@@ -1,5 +1,12 @@
 
 <header class="<%= current_page?(root_path) ? "hero" : "hero small" %>">
+<div class="user">
+    <% if current_user %>
+  Signed in as <%= current_user.first_name %> | <%= link_to "Logout", '/logout' %>
+<% else %>
+  <%= link_to 'Login', new_session_path %> | <%= link_to 'Signup', new_user_path %>
+<% end %>
+</div>
   <section class="title">
     <h3>Welcome to</h3>
     <h1>The Jungle</h1>
