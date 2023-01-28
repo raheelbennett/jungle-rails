@@ -5,7 +5,6 @@ class SessionsController < ApplicationController
 
   def create
     @user = User.find_by_email(params[:email])
-    pp "Test area", @user
     # If the user exists AND the password entered is correct.
     if @user && @user.authenticate(params[:password])
       # Save the user id inside the browser cookie. This is how we keep the user 
@@ -15,7 +14,7 @@ class SessionsController < ApplicationController
       redirect_to root_path
     else
     # If user's login doesn't work, send them back to the login form.
-      redirect_to new_session_path
+      redirect_to new_session_path, notice: "Email and Password do not match our records"
     end
   end
 

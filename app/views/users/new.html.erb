@@ -1,6 +1,7 @@
 <h1>Sign Up</h1>
 
 <%= form_for :user, url: users_path do |f| %>
+    
   <div>
     <%= f.label :first_name %>
     <%= f.text_field :first_name, autofocus: true %>
@@ -26,3 +27,11 @@
     <%= f.submit "Sign up!" %>
   </div>
 <% end %>
+
+<div class="error" >
+<% flash.each do |type, msg| %>
+  <div>
+    <%= msg %>
+  </div>
+<% end %>
+</div>
