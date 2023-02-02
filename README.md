@@ -2,6 +2,26 @@
 
 A mini e-commerce application built with Rails 6.1 for purposes of teaching Rails by example.
 
+## Description:
+
+Jungle is a project built for learning purposes using Ruby on Rail and several testing mechanism including RSpec and Cypress. Data is persisted by Active Record on a PostgreSQL database.
+
+Users can either sign up as a new user, login using email and password credentials if already registered and logout. Error validation is in place to prevent user from registering using an existing email address. Other form validations in place to guide user while registering and logging in. Users can place an order without loggin in just as a logged in user.
+
+Products can be added to the cart that shows itemized list and total. When a product has 0 quantity, a sold out badge should be displayed on the product list page and Add button will be disabled. Once order is placed an order summary page is displayed with email address that was used to place the order and detailed order summary.
+
+Admins must enter HTTP auth login/password to access admin functionality. Admins can list and create new categories, add new products using existing and new categories, and view dashboard for details on products and categories.
+
+!["Home Page"]()
+
+!["Home Page 2"]()
+
+!["Cart"]()
+
+!["Admin Products"]()
+
+!["New User"]()
+
 ## Setup
 
 1. Run `bundle install` to install dependencies
