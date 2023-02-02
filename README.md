@@ -12,15 +12,15 @@ Products can be added to the cart that shows itemized list and total. When a pro
 
 Admins must enter HTTP auth login/password to access admin functionality. Admins can list and create new categories, add new products using existing and new categories, and view dashboard for details on products and categories.
 
-!["Home Page"]()
+!["Home Page"](https://github.com/raheelbennett/jungle-rails/blob/master/docs/Home1.PNG?raw=true)
 
-!["Home Page 2"]()
+!["Home Page 2"](https://github.com/raheelbennett/jungle-rails/blob/master/docs/Home2.PNG?raw=true)
 
-!["Cart"]()
+!["Cart"](https://github.com/raheelbennett/jungle-rails/blob/master/docs/Cart.PNG?raw=true)
 
-!["Admin Products"]()
+!["Admin Products"](https://github.com/raheelbennett/jungle-rails/blob/master/docs/Admin.PNG?raw=true)
 
-!["New User"]()
+!["New User"](https://github.com/raheelbennett/jungle-rails/blob/master/docs/User.PNG?raw=true)
 
 ## Setup
 
