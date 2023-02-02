@@ -11,7 +11,6 @@ class SessionsController < ApplicationController
       # logged in when they navigate around our website.
       if @user = User.authenticate_with_credentials(params[:email], params[:password])
       session[:user_id] = @user.id
-      pp "Session user id", session[:user_id]
       redirect_to root_path
     else
     # If user's login doesn't work, send them back to the login form.

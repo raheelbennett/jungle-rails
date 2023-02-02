@@ -9,4 +9,8 @@ class Product < ApplicationRecord
   validates :price_cents, presence: true
   validates :quantity, presence: true
   validates :category, presence: true
+
+  def soldout?
+   quantity == 0
+  end
 end
